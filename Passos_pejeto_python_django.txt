@@ -1,0 +1,44 @@
+------------------------------------------------------------------------------
+=> Criar e ativar uma venv (ambiente virtual Python):
+criar: 
+virtualenv venv
+
+ativar:
+.\venv\Scripts\activate
+
+==============================================================================
+=> Criar novo projeto django:
+django-admin startproject meuprojeto .
+ * imformar . após "meuprojeto" para criar a estrutura de arquivos django 
+   dentro da pasta "meuprojeto", senão vai criar outra pasta "meuprojeto"
+   e criar a estrutura dentro.
+
+------------------------------------------------------------------------------
+=> Criar a aplicação (antes, entrar na pasta do projeto):
+py manage.py startapp meuApp
+
+------------------------------------------------------------------------------
+=> Ativar o servidor para executar o projeto:
+py manage.py runserver
+
+* Em seguida, pode-se acessar o projeto através da url http://127.0.0.1:8000/
+------------------------------------------------------------------------------
+
+=> Criar/migrar para banco de dados:
+py manage.py migrate
+------------------------------------------------------------------------------
+=> Criar o super usuário para painel admin:
+py manage.py createsuperuser
+
+------------------------------------------------------------------------------
+=> Criar/atulizar arquivo "requirements.txt" com as dependencias do projeto
+   para, principalmente para outros desenvoldores, saberem quais 
+   dependencias tem o projeto:
+ 
+pip freeze > requirements.txt
+=============================================================================
+Git:
+  No VSCode tem a extensão "Gitignore Templates" para criar o arquivo
+  git ignore. Após instalar a extensão, teclar F1, informar a liguagem
+  base do projeto, e será gerado o arquivo.
+

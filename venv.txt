@@ -1,0 +1,4 @@
+criar e ativar uma venv (ambiente virtual Python):
+
+criar  -> python -m venv venv 
+ativar -> .\venv\Scripts\activate
